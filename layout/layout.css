@@ -1,0 +1,241 @@
+@charset "utf-8";
+html, body{
+        font-family:"Microsoft Yahei", sans-serif !important;
+        overflow:hidden;
+        height:100%;
+        margin:0;
+        padding:0;
+        font-size:12px;
+        background:#f1f1f1 url(img/bg_main.png)
+}
+html{
+        _padding:110px 0;
+}
+.top{
+        background:#4795d3 url("img/logo1.png") no-repeat scroll left top;
+        border-bottom:0 solid #2c3749;
+        height:44px;
+}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{
+        border-collapse:collapse;
+        border-spacing:0;
+}
+a{
+        color:#1a4363;
+}
+/* 让链接在 hover 状态下显示下划线 */
+a:hover{
+        text-decoration:underline;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins, a{
+        text-decoration:none;
+}
+.fun_btn{
+        float:right;
+        height:42px;
+        line-height:42px;
+        padding-right:20px;
+        _display:inline;
+}
+.fun_btn a{
+        height:40px;
+        line-height:40px;
+        color:#f3f3f3;
+        margin:0 15px;
+}
+/*
+*div 层布局开始----
+*/
+#layout_frame_head{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:88px;
+        /*background:#166fb9;*/
+        border:1px solid #166fb9;
+}
+#layout_frame_layer{
+        position:absolute;
+        top:87px;
+        right:0;
+        bottom:26px;
+        left:0;
+        overflow:hidden;
+        width:100%;
+        _height:100%;
+}
+#layout_frame_side{
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        overflow:auto;
+        width:220px;
+        _height:100%;
+        /*background:#166fb9;*/
+        border:0.5px solid #166fb9;
+}
+#layout_frame_main{
+        position:absolute;
+        _position:static;
+        top:0;
+        right:0;
+        bottom:0;
+        left:219px;
+        overflow:hidden;
+        _overflow:auto;
+        _height:100%;
+        _margin-left:210px;
+        /*background:#166fb9*/
+        border:0.5px solid #166fb9;
+}
+#layout_frame_content{
+        _overflow:auto;
+        _width:100%;
+        _height:100%;
+}
+#layout_frame_floor{
+        position:absolute;
+        bottom:0;
+        line-height:30px;
+        left:0;
+        width:100%;
+        height:25px;
+        /*background:#166fb9;*/
+        border:0.5px solid #166fb9;
+}
+/* 与布局无关，一些说明性内容样式 */
+.tit-layout{
+        margin:30px 0 0;
+        font-size:18px;
+        text-align:center;
+}
+.copyright{
+        font-weight:bold;
+        text-align:center;
+}
+#feature{
+        width:200%;
+        line-height:4;
+}
+#feature .hd{
+        padding:20px 15px;
+}
+#feature .hd h2{
+        margin:0;
+        font-size:16px;
+}
+#feature .bd ol{
+        margin-top:0;
+}
+#feature .bd h3{
+        margin:0;
+        padding:0 15px;
+        font-size:14px;
+}
+#feature .ft{
+        padding:10px 15px 30px;
+}
+/*
+*div 层布局结束----
+*/
+/* 图片滚动  --- 开始 */
+.picScroll{
+        position:relative;
+        overflow:hidden;
+        width:100%;
+        height:100%;
+}
+.picScroll ul{
+        overflow:hidden;
+        zoom:1;
+        font-size:0;
+}
+.picScroll ul li{
+        display:block;
+        float:left;
+        margin:0px;
+        width:162px;
+        font-size:14px;
+        overflow:hidden;
+        display:inline;
+        border-radius: 10px;
+        /* line-height: 40px;*/
+}
+.picScroll ul li a{
+        display:block;
+        float:left;
+        width:160px;
+        height:42px;
+        line-height:40px;
+        text-align:center;
+        color:#f3f3f3;
+        border-radius: 10px;
+}
+.picScroll ul li a:hover, .picScroll ul li a:active{
+        line-height:40px;
+        display:block;
+        float:left;
+        width:160px;
+        height:42px;
+        line-height:40px;
+        text-align:center;
+        margin:-0.1px;
+        border:0;
+        text-decoration:none;
+        color:#f3f3f3;
+        background:rgb(14, 68, 113) no-repeat;
+        border-radius: 10px;
+}
+.activeID{
+        display:block;
+        width:160px;
+        height:42px;
+        background:rgb(14, 68, 113) no-repeat;
+        color:#FFF;
+        border:0;
+        text-decoration:none;
+        display:block;
+        float:left;
+        line-height:40px;
+        text-align:center;
+        border-radius: 10px;
+}
+.picScroll ul li a span{
+        padding-left:20px;
+}
+.picScroll .prev{
+        position:absolute;
+        left:5px;
+        top:11px;
+        display:block;
+        width:20px;
+        height:20px;
+        overflow:hidden;
+        background:url(img/m_left.png) no-repeat;
+        background-size:100% 100%;
+        cursor:pointer;
+}
+.picScroll .next{
+        left:auto;
+        right:5px;
+        position:absolute;
+        top:11px;
+        display:block;
+        width:20px;
+        height:20px;
+        overflow:hidden;
+        background:url(img/m_right.png) no-repeat;
+        background-size:100% 100%;
+        cursor:pointer;
+}
+.picScroll .prevStop{
+        background-position:0 0;
+}
+.picScroll .nextStop{
+        background-position:-80px 0;
+}
+/** 图片滚动  --- 结束 */
