@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*
+	@名称: sya_frames
+	@功能: 框架文件样式
+*/
+body,html{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft Yahei",sans-serif !important;
+	font-family:"微软雅黑","宋体";
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:#fafafa url(../images/bg_main.png) repeat ;
+	height:100%;
+	overflow-x:hidden;
+	}
+#header{
+	width:100%;
+	height:80px;
+	/**background:#ffffff;	**/
+	background:#4795d3;
+	border-bottom:0px #e0dfdf solid;
+	}
+.fun_btn{
+	float:right;
+	height:42px;
+	line-height:42px;
+	padding-right:20px;
+	_display:inline;
+}
+
+.fun_btn a{
+	height:40px;
+	line-height:40px;
+	color:#f3f3f3;
+}
+
+#logo{
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:12px;
+	left:20px;
+	z-index:3;
+	}
+.topright{
+	float:right;
+	margin:16px 20px 0 0;
+	padding:0;
+	width:320px;
+	}
+.topright h4{
+	width:180px;
+	float:left;
+	position:relative;
+	margin:0 5px;
+	}
+.topright h4 img{
+	float:left;
+	}
+.topright h4 span{
+	display:block;
+	position:absolute;
+	top:15px;
+	left:60px;
+	font-size:14px;
+
+	}
+.topnav{
+	margin:14px 4px 0 0;
+	}
+.topnav li{
+	float:left;
+	}
+.topnav li a{
+	display:block;
+
+	}
+.topnav li a span{
+	display:block;
+
+	text-indent:25px;
+	font-size:14px;
+	height:20px;
+	border-left:1px solid #e3e3e3;
+	padding:0 15px;
+	line-height:20px;
+	}
+
+
+/**col layout 双飞翼布局**/
+#container{
+	padding: 0 0 0 0;
+	}
+#col-main{
+	float:left;
+	width:100%;
+	}
+.main-content{
+	margin:0 0 0 200px;
+	}
+.main-content-hide{
+	margin:0 0 0 50px;
+	}
+.col-sub{
+	float: left;
+    width: 200px;
+    margin-left: -100%;
+	background:#30384f url(../images/menu_bj.png) no-repeat bottom ;
+	}
+
+.col-sub-hide{
+   background:#30384f url(../images/menu_bj.png) no-repeat bottom ;
+	display:table;
+	height:100%;
+	float:left;
+	width:50px;
+	margin-left:-100%;
+	position: relative;
+    left: 0;
+	}
+#submenu1{
+	display:table-cell;
+	height:100%;
+	float:left;
+	width:50px;
+	margin-left:-100%;
+	position: relative;
+    left: 0;
+	overflow:hidden;
+	}
+body:nth-of-type(1) .col-extra{
+	display:table;
+	float:left;
+	width:50px;
+	margin-left:0;
+	position:fixed;
+    left: 280px;
+	background:url(../images/bg_controlbar.png) repeat-y;
+	vertical-align:middle;
+	}/*aileen add 20120921 chrome下resize后bug*/
+.col-extra{
+	display:table;
+	height:100%;
+	float:left;
+	width:50px;
+	margin-left:-100%;
+	position: relative;
+    left: 280px;
+	background:url(../images/bg_controlbar.png) repeat-y;
+	vertical-align:middle;
+	}
+body:nth-of-type(1) .col-extra-hide{
+	display:table;
+	float:left;
+	width:50px;
+	margin-left:0;
+	position:fixed;
+    left: 0;
+	background:url(../images/bg_controlbar.png) repeat-y;
+	vertical-align:middle;
+	}/*aileen add 20120924 chrome下resize后bug*/
+.col-extra-hide{
+	display:table;
+	height:100%;
+	float:left;
+	width:50px;
+	margin-left:-100%;
+	position: relative;
+    left: 0;
+	background:#000 url(../images/bg_controlbar.png) repeat-y;
+	vertical-align:middle;
+	}
+
+/**End col layout**/
+/**=================== 页面顶部第二层：一级菜单 ===================**/
+.glnav{
+	height:35px;
+	/**background:#166fb9 url(../images/navLeft_bg.png) no-repeat 0 0;**/
+	overflow:hidden;
+	position: relative;
+	padding:0;/*new 20150924*/
+}
+.glnav p a{
+	display:block;
+	float:left;
+	width:120px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	text-align:center;
+	color:#f3f3f3;
+	/*background:#f3f3f3;*/
+}
+/*一级菜单鼠标滑过或被选中时样式*/
+.glnav p a:hover,.glnav a.active{
+	width:120px;
+	height :40px;
+	line-height:40px;
+	background:rgb(14, 68, 113) no-repeat;
+	color:#FFF;
+	border:0;
+	text-decoration:none
+}
+
+.glnav p a span{
+	padding-left:20px;
+}
+/*切换服务器图标 */
+.glnav .tips{
+	float:right;
+	height:20px;
+	line-height:20px;
+	margin-right:20px;
+	margin-top:13px
+}
+
+.glnav .tips i{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	margin:0 5px 0 15px;
+}
+
+.glnav .tips strong{
+	font-weight:400;
+}
+
+.glnav .tips a:hover{
+	color: orange;
+	text-decoration:underline;
+}
+
+.glnav p a.menuleft{
+	width:32px;
+	height:40px;
+}
+
+.glnav p a.menuright{
+	width:32px;
+	height:40px;
+}
+
+.glnav p a.menuleft:hover{
+	display:block;
+	float:left;
+	width:32px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	text-align:center;
+/**	background:url(../images/glnav_bg.jpg) repeat-x;**/
+	border:0px
+}
+
+.glnav p a.menuright:hover{
+	display:block;
+	float:left;
+	width:32px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	text-align:center;
+/**	background:url(../images/glnav_bg.jpg) repeat-x; **/
+	border:0px
+}
+
+
+.top {
+    background: #4795d3 url("../images/logo.png") no-repeat scroll left top;border-bottom: 0 solid #2c3749;
+    height: 44px;
+}
+

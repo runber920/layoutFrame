@@ -8,9 +8,8 @@
     <!-- <script src="js/tabui.js" type="text/javascript" ></script >-->
     <script src="js/time.js" type="text/javascript" ></script >
     <script type='text/javascript' >
-    $(function () {
-        //默认主页界面
-        var urlLink = "../main/main_list.html";    //../main/main_list.html
+    $(function() {
+        var urlLink = "../frame/main_list.html";  //默认初始化主页页面.
         $("#sysmain").attr("src",urlLink);
     });
     //初始化整体页面
@@ -57,19 +56,19 @@
                                 <td style="width:20px;" ><a class="prev" title='左移动导航' ></a ></td >
                                 <td >
                                     <ul id="navnew" >
-                                        <li id="10" ><a id='activeID10' onclick="clickAppMenu('10','../model/home/welcome.html','sysmain')" href="javascript:void(0)" ><span style="background:url(img/home.png) left center no-repeat;" >首页理管理管理</span ></a ></li >
-                                        <li id="11" ><a id='activeID11' onclick="clickAppMenu('11','../main/main_list.html','sysmain')" href="javascript:void(0)" ><span style="background:url(img/menu.png) left center no-repeat;" >军休安置服务管理理管理管理</span ></a ></li >
-                                        <li id="12" ><a id='activeID12' onclick="clickAppMenu('12','www.baidu.com','sysmain')" href="javascript:void(0)" ><span style="background:url(img/menu.png) left center no-repeat;" >退役士兵管理理管理管理</span ></a ></li >
-                                        <li id="13" ><a id='activeID13' onclick="clickAppMenu('13','www.baidu.com','sysmain')" href="javascript:void(0)" > <span style="background:url(img/census.png) left center no-repeat;" >设置管理理管理管理</span ></a ></li >
-                                        <li id="14" ><a id='activeID14' onclick="clickAppMenu('14','www.baidu.com','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >14管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="15" ><a id='activeID15' onclick="clickAppMenu('15','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >15管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="16" ><a id='activeID16' onclick="clickAppMenu('16','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >16管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="17" ><a id='activeID17' onclick="clickAppMenu('17','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >17管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="18" ><a id='activeID18' onclick="clickAppMenu('18','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >18管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="19" ><a id='activeID19' onclick="clickAppMenu('19','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >19管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="20" ><a id='activeID20' onclick="clickAppMenu('20','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >20管理管理管理管理管理管理管理</span ></a ></li >
-                                        <li id="21" ><a id='activeID21' onclick="clickAppMenu('21','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >21理管理管理管理管理管理管理理</span ></a ></li >
-                                        <li id="22" ><a id='activeID22' onclick="clickAppMenu('22','','sysmain')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >22管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="10" ><a id='activeID10' onclick="clickAppMenu('10','../frame/main_list.html','true')" href="javascript:void(0)" ><span style="background:url(img/home.png) left center no-repeat;" >首页理管理管理</span ></a ></li >
+                                        <li id="11" ><a id='activeID11' onclick="clickAppMenu('11','../frame/main_list.html','false')" href="javascript:void(0)" ><span style="background:url(img/menu.png) left center no-repeat;" >军休安置服务管理理管理管理</span ></a ></li >
+                                        <li id="12" ><a id='activeID12' onclick="clickAppMenu('12','../frame/main_list.html','false')" href="javascript:void(0)" ><span style="background:url(img/menu.png) left center no-repeat;" >导航栏测试</span ></a ></li >
+                                        <li id="13" ><a id='activeID13' onclick="clickAppMenu('13','www.baidu.com','false')" href="javascript:void(0)" > <span style="background:url(img/census.png) left center no-repeat;" >设置管理理管理管理</span ></a ></li >
+                                        <li id="14" ><a id='activeID14' onclick="clickAppMenu('14','www.baidu.com','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >14管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="15" ><a id='activeID15' onclick="clickAppMenu('15','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >15管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="16" ><a id='activeID16' onclick="clickAppMenu('16','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >16管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="17" ><a id='activeID17' onclick="clickAppMenu('17','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >17管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="18" ><a id='activeID18' onclick="clickAppMenu('18','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >18管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="19" ><a id='activeID19' onclick="clickAppMenu('19','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >19管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="20" ><a id='activeID20' onclick="clickAppMenu('20','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >20管理管理管理管理管理管理管理</span ></a ></li >
+                                        <li id="21" ><a id='activeID21' onclick="clickAppMenu('21','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >21理管理管理管理管理管理管理理</span ></a ></li >
+                                        <li id="22" ><a id='activeID22' onclick="clickAppMenu('22','','false')" href="javascript:void(0)" ><span style="background:url(img/auuct.png) left center no-repeat;" >22管理管理管理管理管理管理管理</span ></a ></li >
                                     </ul >
                                 </td >
                                 <td style="width:20px;" ><a class="next" title='右移动导航' ></a ></td >
@@ -90,8 +89,8 @@
 <div id="layout_frame_layer" >
     <div id="layout_frame_side" >侧边栏</div >
     <div id="layout_frame_main" >
-        <div id="layout_frame_content" >
-            <iframe name="sysmain" id="sysmain" src="" scrolling="on" width="100%" height="100%" border="0" onload="resizeFramedbClick('sysmain');" ></iframe >
+        <div id="layout_frame_content" class='content-wrap-inner' >
+            <iframe name='sysmain' id='sysmain' src="" scrolling='on' width="100%" height="100%" border='0' frameborder='0' onload="resizeFramedbClick('sysmain');" ></iframe >
         </div >
     </div >
 </div >
@@ -103,7 +102,7 @@
     </address >
 </div >
 <!-- 底边层 结束-->
-<script src="layout.min.js" type="text/javascript" ></script >
+<script src="layout.js" type="text/javascript" ></script >
 <script src="js/fullview.js" type="text/javascript" ></script >
 </body >
 </html >

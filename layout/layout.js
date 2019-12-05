@@ -25,12 +25,20 @@ $(".fullscreen").click(function () {
     fullScreenClickCount++;
 });
 //点击当前导航栏选择并且调整到响应得页面操作.
-function clickAppMenu(id,urlLink,otype) {
+/**
+* 主体方法参数对象
+* id:当前操作对象ID
+* urlLink: 当前操作对象请求的 Action 对象.
+* istrue:  true -具有边边栏对象 和 false  -没有左边栏对象.
+ * */
+function clickAppMenu(id,urlLink,istrue) {
     resizeMax();
     if ($("#" + id).attr('class') == 'active') {
         return;
     }
-    $("#sysmain").attr("src",urlLink);
+    //$("#sysmain").attr("src",urlLink);
+    $('.content-wrap-inner').html('');
+    $('.content-wrap-inner').load(urlLink);
     $('#navnew').children("li").each(function () {
         $("#activeID" + this.id + "").removeClass("activeID");
         if (this.id == id) {

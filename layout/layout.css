@@ -59,7 +59,7 @@ ins, a{
 }
 #layout_frame_layer{
         position:absolute;
-        top:87px;
+        top:90px;
         right:0;
         bottom:26px;
         left:0;
@@ -75,8 +75,8 @@ ins, a{
         overflow:auto;
         width:220px;
         _height:100%;
-        /*background:#166fb9;*/
-        border:0.5px solid #166fb9;
+        /*background:#166fb9;
+        border:0.5px solid #166fb9;  */
 }
 #layout_frame_main{
         position:absolute;
@@ -162,7 +162,7 @@ ins, a{
         font-size:14px;
         overflow:hidden;
         display:inline;
-        border-radius: 10px;
+        border-radius: 25px;
         /* line-height: 40px;*/
 }
 .picScroll ul li a{
@@ -173,7 +173,7 @@ ins, a{
         line-height:40px;
         text-align:center;
         color:#f3f3f3;
-        border-radius: 10px;
+        border-radius: 25px;
 }
 .picScroll ul li a:hover, .picScroll ul li a:active{
         line-height:40px;
@@ -188,7 +188,7 @@ ins, a{
         text-decoration:none;
         color:#f3f3f3;
         background:rgb(14, 68, 113) no-repeat;
-        border-radius: 10px;
+        border-radius: 25px;
 }
 .activeID{
         display:block;
@@ -202,7 +202,7 @@ ins, a{
         float:left;
         line-height:40px;
         text-align:center;
-        border-radius: 10px;
+        border-radius: 25px;
 }
 .picScroll ul li a span{
         padding-left:20px;

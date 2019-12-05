@@ -1,0 +1,307 @@
+<!doctype html>
+<html >
+<head >
+    <meta charset="utf-8" >
+    <title >海南省XXX信息管理一体化平台</title >
+    <meta http-equiv=="Pragma" CONTENT="no-cache" >
+    <meta http-equiv="Window-target" CONTENT="_top" >
+    <!-----样式文件调用注意不要改变顺序------>
+    <link href="../resource/asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../resource/asset/css/main_style.css" rel="stylesheet" type="text/css" />
+</head >
+<body >
+<form name="" >
+    <!--标题栏开始-->
+    <div class="ui-title fn-clear" >
+        <img src="../resource/asset/images/icon_title.png" />
+        <h2 >会员信息</h2 >
+        <ul class="title-btn" >
+            <li ><input class="btn btn-normal" type="button" id="Hide_Button1" title="显示查询条件" style="display: none;" value="显示" /></li >
+            <li ><input class="btn btn-reset" type="button" id="Hide_Button2" title="隐藏查询条件" value="隐藏" /></li >
+            <li ><input class="btn btn-reset" type="button" id="Search_Button" value="查询" /></li >
+            <li ><input class="btn btn-reset" type="button" id="Reset_Button" value="重置" /></li >
+        </ul >
+    </div >
+    <!--标题栏结束-->
+    <!--信息列表内容开始-->
+    <div class="ui-list fn-clear" >
+        <!--搜索面板开始-->
+        <div class="search-list" id="search-list">
+            <!--<h4 >查询条件</h4>-->
+            <table class="search-tab" >
+                <colgroup ><!--注意用colgrounp标签组定义表格的每列宽度不可删除-->
+                    <col width="140" ></col >
+                    <col ></col >
+                    <col width="140" ></col >
+                    <col ></col >
+                </colgroup >
+                <tbody >
+                <tr >
+                    <th >辖区</th >
+                    <td ><select class="input-select " >
+                        <option >北京</option >
+                        <option >北京</option >
+                        <option >北京</option >
+                        <option >北京</option >
+                    </select ></td >
+                    <th >会员类型</th >
+                    <td ><select class="input-select " >
+                        <option >普通会员</option >
+                        <option >联系会员</option >
+                        <option >团体会员</option >
+                        <option >理事长单位</option >
+                    </select ></td >
+                </tr >
+                <tr >
+                    <th >培训名称</th >
+                    <td ><input type="text" name="input" class="input-normal input-wdl  " /></td >
+                    <th >参与人数限额</th >
+                    <td ><input type="text" name="" class="input-normal input-wdl  " /></td >
+                </tr >
+                </tbody >
+                <tbody class="query-tab" >
+                <tr >
+                    <th >是否发布</th >
+                    <td ><label for="a" ><input type="radio" name="1" id="a" >是</label ><label for="b" ><input type="radio" name="1" id="b" >否</label ></td >
+                    <th >培训天数</th >
+                    <td ><input type="text" name="" class="input-normal input-wdl  " /></td >
+                </tr >
+                <tr >
+                    <th >报名起止时间</th >
+                    <td ><input type="text" name="" class="input-normal input-wd100 fn-left" /> <span class="fn-left" >至</span ><input type="text" name="" class="input-normal input-wd100  fn-left" /></td >
+                    <th >培训起止时间</th >
+                    <td ><input type="text" name="" class="input-normal input-wd100 fn-left" /> <span class="fn-left" >至</span ><input type="text" name="" class="input-normal input-wd100  fn-left" /></td >
+                </tr >
+                <tr >
+                    <th >培训天数</th >
+                    <td colspan="3" ><input type="text" name="" class="input-normal input-wdl  " /></td >
+                </tr >
+                </tbody >
+            </table >
+            <!--<div class="xline fn-clear" ></div >-->
+        </div >
+        <!--搜索面板结束-->
+        <div class="list-btnbar fn-clear" >
+            <ul >
+                <li><a href="../train/fbgl_add.html"><span style="padding-left: 20px;background:url(../resource/asset/images/m_add.png) left center no-repeat;">新建</span></a ></li >
+                <li><a href="javascript:void(0);" ><span style="padding-left: 20px;background:url(../resource/asset/images/m_edit.png) left center no-repeat;">编辑</span></a ></li >
+                <li><a href="javascript:void(0);" ><span style="padding-left: 20px;background:url(../resource/asset/images/m_del.png) left center no-repeat;">删除</span></a ></li >
+                <li><a href="javascript:void(0);" ><span style="padding-left: 20px;background:url(../resource/asset/images/m_putup.png) left center no-repeat;">设置</span></a ></li >
+            </ul >
+        </div >
+        <div class="info-list fn-clear" >
+            <table class="list-tab " summary="这是一个1行4列的表格样式模板" >
+                <colgroup ><!--注意用colgrounp标签组定义表格的每列宽度不可删除-->
+                    <col width="40" ></col >
+                    <col width="100" ></col >
+                    <col width="100" ></col >
+                    <col ></col >
+                    <col width="100" ></col >
+                    <col width="100" ></col >
+                    <col width="100" ></col >
+                    <col width="120" ></col >
+                    <col width="100" ></col >
+                    <col width="80" ></col >
+                </colgroup >
+                <thead >
+                <tr >
+                    <th class="fn-text-center" ><input name="" type="checkbox" value="" /></th >
+                    <th >股票代码</th >
+                    <th >公司简称</th >
+                    <th >公司全称</th >
+                    <th >公司性质</th >
+                    <th >会员类别</th >
+                    <th >会员性质</th >
+                    <th >登记日期</th >
+                    <th >缴费状态</th >
+                    <th >&nbsp;</th >
+                </tr >
+                </thead >
+                <tbody class="discolor" >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="hygl_detail_view03.html" >2029日更新</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="hygl_detail_view.html" >657345</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="hygl_detail_view02.html" >657345</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="javascript:opendg('feedback_success_pop.html',450,300)" >成功提示</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="javascript:opendg('feedback_false_pop.html',450,300)" >失败反馈</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontgreen" >【已缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="javascript:opendg('feedback_wram_pop.html',450,300)" >提示信息</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontgreen" >【已缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="hygl_detail_view.html" >657345</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+
+
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="javascript:opendg('feedback_false_pop.html',450,300)" >失败反馈</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontgreen" >【已缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="javascript:opendg('feedback_wram_pop.html',450,300)" >提示信息</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontgreen" >【已缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+                <tr >
+                    <td class="fn-text-center" ><input name="" type="checkbox" value="" /></td >
+                    <td class="fn-text-center" ><a href="hygl_detail_view.html" >657345</a ></td >
+                    <td >柳州医药</td >
+                    <td >广西柳州医药股份有限公司</td >
+                    <td class="fn-text-center" >民营企业</td >
+                    <td class="fn-text-center" >普通会员</td >
+                    <td class="fn-text-center" >普通</td >
+                    <td class="fn-text-center" >2015-07-15</td >
+                    <td class="fn-text-center" ><font class="fontred" >【未缴费】</font ></td >
+                    <td class="fn-text-center" ><a href="javascript:void(0);" >编辑</a ></td >
+                </tr >
+
+
+                </tbody >
+            </table >
+        </div >
+        <div class="ui-page" >
+    <span class=" ui-item-link" >
+       <div ><a href="javascript:viod(0);" class="ui-page-item ui-page-item-first ui-page-item-disable " >首页</a >
+       <a href="javascript:viod(0);" class="ui-page-item ui-page-item-prev ui-page-item-disable" >上一页</a >
+       <a href="javascript:viod(0);" class="ui-page-item ui-page-next " >下一页</a >
+       <a href="javascript:viod(0);" class="ui-page-item ui-page-last " >尾页</a ></div >
+       <div class="ui-page-go" ><h4 >转到</h4 >
+       <input name="page" id="page" type="text" value="" class="input-page " />
+       <a href="javascript:turnTo();" class="ui-button ui-button-go" >Go</a >
+       </div >
+    </span >
+            <span class="ui-page-item ui-page-item-set" ><h4 >每页</h4 >
+    <select name="selectlimitnum" id="selectlimitnum" class="select-page" onchange="javascript:search()" >
+     <option value="10" >10</option >
+        <option value="20" >20</option >
+        <option value="30" >30</option >
+        <option value="40" >40</option >
+        <option value="50" >50</option >
+      </select > </span >
+            <span class="ui-page-item ui-page-item-info" >共123条记录，共1/12页，第1页</span >
+        </div > <!-- .ui-page -->
+    </div >
+    <!--信息列表内容结束-->
+</form >
+<script src='../resource/js/jquery_1.11.js' type='text/javascript' ></script>
+<script type='text/javascript' >
+/**
+ *初始化执行操作
+ * author: 王明 <br>
+ * Date : 2019-12-05 09:09:16 上午 <br>
+ * version: 1.0 <br>
+ * */
+$(function () {
+    //显示
+    $('#Hide_Button1').click(function () {
+        $('#Hide_Button1').hide();
+        $('#Hide_Button2').show();
+        $('#search-list').show();
+    });
+    //隐藏
+    $('#Hide_Button2').click(function () {
+        $('#Hide_Button1').show();
+        $('#Hide_Button2').hide();
+        $('#search-list').hide();
+    });
+    //查询
+    $('#Search_Button').click(function () {
+        subimtBtn();
+    });
+    //重置
+    $('#Reset_Button').click(function () {
+        //$("#projectid").val("");    //项目编号
+        //$("#projectname").val("");  //项目名称
+        //$("#qymcnmae").val("");     //申请主体名称
+        //$("#fd_user").val("");      //法定代表人
+    });
+});
+</script >
+</body >
+</html >
