@@ -32,13 +32,11 @@ $(".fullscreen").click(function () {
 * istrue:  true -具有边边栏对象 和 false  -没有左边栏对象.
  * */
 function clickAppMenu(id,urlLink,istrue) {
-    resizeMax();
     if ($("#" + id).attr('class') == 'active') {
         return;
     }
-    //$("#sysmain").attr("src",urlLink);
-    $('.content-wrap-inner').html('');
-    $('.content-wrap-inner').load(urlLink);
+    resizeMax();
+    $("#sysmain").attr("src",urlLink);
     $('#navnew').children("li").each(function () {
         $("#activeID" + this.id + "").removeClass("activeID");
         if (this.id == id) {
