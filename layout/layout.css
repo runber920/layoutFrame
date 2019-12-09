@@ -162,7 +162,7 @@ ins, a{
         font-size:14px;
         overflow:hidden;
         display:inline;
-        border-radius: 25px;
+        border-radius: 5px;
         /* line-height: 40px;*/
 }
 .picScroll ul li a{
@@ -173,7 +173,7 @@ ins, a{
         line-height:40px;
         text-align:center;
         color:#f3f3f3;
-        border-radius: 25px;
+        border-radius: 5px;
 }
 .picScroll ul li a:hover, .picScroll ul li a:active{
         line-height:40px;
@@ -188,7 +188,7 @@ ins, a{
         text-decoration:none;
         color:#f3f3f3;
         background:rgb(14, 68, 113) no-repeat;
-        border-radius: 25px;
+        border-radius: 5px;
 }
 .activeID{
         display:block;
@@ -202,7 +202,7 @@ ins, a{
         float:left;
         line-height:40px;
         text-align:center;
-        border-radius: 25px;
+        border-radius: 5px;
 }
 .picScroll ul li a span{
         padding-left:20px;

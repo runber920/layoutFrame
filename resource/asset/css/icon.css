@@ -1,0 +1,28 @@
+@charset "utf-8";
+/** 定义所有平台统一的图标 css 对象库*/
+/** 新增 */
+.add_button{
+        padding-left:20px;
+        background:url(../images/m_add.png) left center no-repeat;
+}
+/** 编辑 */
+.edit_button{
+        padding-left:20px;
+        background:url(../images/m_edit.png) left center no-repeat;
+}
+/** 删除 */
+.del_button{
+        padding-left:20px;
+        background:url(../images/m_del.png) left center no-repeat;
+}
+/** 设置 */
+.putup_button{
+        padding-left:20px;
+        background:url(../images/m_putup.png) left center no-repeat;
+}
+/** 打印 */
+/** 导出 */
+/** 导入 */
+/** 撤销 */
+/** 重置  */
+/** 状态-红 黄 蓝 绿  */
