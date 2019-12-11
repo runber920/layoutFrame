@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="x-ua-compatible" content="ie=edge" >
+    <title>海南省退役军人信息管理一体化管理平台</title >
+    <script src="../resource/login.js" ></script >
+    <script src="../resource/login/js/time.js" ></script >
+</head>
+<body class="body-bgcolor" background="../resource/login/img/login.jpg" style="overflow:hidden;margin:0;" >
+<div class="time-section" ></div >
+<div class="case-section" >
+    <div class="head-section" ></div >
+    <div class="title-section" ></div >
+</div >
+<div class="wrapper" >
+    <div class="main" >
+        <div class="left" >
+            <div class="left-img" >
+                <img src="../resource/login/img/login5.png" >
+            </div >
+        </div >
+        <div class="ouside-wrapper" >
+            <div class="entryButtons" ></div >
+            <div class="insid-wrapper" >
+                <from >
+                    <h1 class="hello-text" >欢迎页登录</h1 >
+                    <h6 style="padding-left: 30px;margin: -20px auto;" >
+                        <div id="Clock" ></div >
+                        <br ></h6 >
+                    <div class="input-piece">
+                    	<div class="input-group">
+                    		<span class="input-group-addon"><i class="iconfont icon-yonghuming"></i></span>
+                    		<input type="text" class="form-control" name="userName" id="userName" value="admin" placeholder="请输入手机号码/用户名">
+                    	</div>
+                    </div>
+                    <div class="input-piece">
+                    	<div class="input-group">
+                    		<span class="input-group-addon"><i class="iconfont icon-mima"></i></span>
+                    		<input type="password" class="form-control" name="userPWD" id="userPWD" value="123456" placeholder="请输入密码">
+                    	</div>
+                    </div>
+					<div class="input-piece">
+						<div class="input-group">
+							<span class="input-group-addon" ><i class="iconfont icon-yanzhengma1" ></i ></span >
+							<input type="yzm" class="form-control" style="width: 130px;" name="sysCode" id="sysCode" value="113322" placeholder="请输入验证码">
+							<div class="input-group-prepend">
+								<div class="" id="search_pass_link"><span id="code" title="看不清，换一张">zxcd</span></div>
+							</div>
+						</div>
+					</div>
+                    <div class="login-btn" >
+                        <button type="button" id="submit_btn" class="btn btn-block" style="background:red;color:#fff;" >登录</button >
+                    </div >
+                    <img src="../resource/login/img/login4.png" style="position: absolute;right:200px;top: 20px;" >
+                </from >
+            </div >
+        </div >
+    </div >
+</div >
+</body >
+<script type="text/javascript" >
+timeTick();
+$(document.body).css({
+    "overflow-x": "hidden",
+    "overflow-y": "hidden"
+});
+var code; //声明一个变量用于存储生成的验证码
+document.getElementById("code").onclick = changeImg;
+function changeImg() {
+    var arrays = new Array(
+        '1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i','j',
+        'k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+        'A','B','C','D','E','F','G','H','I','J','U','V','W','X','Y','Z'
+    );
+    code = ''; //重新初始化验证码
+    alert(arrays.length);
+    //随机从数组中获取四个元素组成验证码
+    for (var i = 0; i < 4; i++) {
+        //随机获取一个数组的下标
+        var r = parseInt(Math.random() * arrays.length);
+        code += arrays[r];
+    }
+    document.getElementById('code').innerHTML = code; //将验证码写入指定区域
+}
+$(function () {
+    // 提交表单
+    $('#submit_btn').click(function () {
+        if ($('#userName').val() == '') {
+            alert('请输入用户名');
+            $('#userName').focus();
+        } else if ($('#userPWD').val() == '') {
+            alert('请输入密码');
+            $('#userPWD').focus();
+        } else if ($('#sysCode').val() == '') {
+            alert('请输入验证码');
+            $('#sysCode').focus();
+        } else {
+            window.location = "../layout/index.html";
+        }
+    });
+});
+</script >
+</html >
